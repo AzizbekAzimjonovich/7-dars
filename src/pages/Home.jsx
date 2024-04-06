@@ -17,8 +17,6 @@ function Home() {
       });
   }, []);
 
-  console.log(recipes);
-
   return <div>{recipes && <RecipiesList recipes={recipes} />}</div>;
 }
 

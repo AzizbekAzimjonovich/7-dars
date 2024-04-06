@@ -1,7 +1,7 @@
 {
   "recipies": [
     {
-      "id": 1,
+      "id": "1",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-xDLXhh2PKPTXzEvMPGM_pBNbWMvWDo41Q8z3DZBuw&s",
       "title": "Palov",
       "ingredients": [
@@ -18,7 +18,7 @@
       "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
     },
     {
-      "id": 2,
+      "id": "2",
       "img": "https://avatars.dzeninfra.ru/get-zen_doc/3437146/pub_60357f87084cc34524138172_60357faf084cc34524139d97/scale_1200",
       "title": "Mastava",
       "ingredients": [
@@ -35,7 +35,7 @@
       "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
     },
     {
-      "id": 3,
+      "id": "3",
       "img": "https://zira.uz/wp-content/uploads/2018/03/dimlama-3.jpg",
       "title": "Dimlama",
       "ingredients": [
@@ -52,7 +52,7 @@
       "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
     },
     {
-      "id": 4,
+      "id": "4",
       "img": "https://zira.uz/wp-content/uploads/2019/01/beshbarmak-6.jpg",
       "title": "Beshbarmoq",
       "ingredients": [
@@ -69,7 +69,7 @@
       "method": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel nihil tenetur rerum eos architecto delectus suscipit adipisci aut ut porro consequatur ipsum error voluptate facere sequi dicta, at sit nobis inventore sapiente placeat possimus! Id, libero. Ullam et architecto facilis magnam nobis odit repellat quam, impedit veniam tempore. Sapiente!"
     },
     {
-      "id": 5,
+      "id": "5",
       "img": "https://avatars.dzeninfra.ru/get-zen_doc/5234364/pub_61d29762dc3e201c9857ac29_61d339e382149e77315c1498/orig",
       "title": "norin",
       "ingredients": [
