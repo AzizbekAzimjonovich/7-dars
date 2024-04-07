@@ -1,76 +1,55 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
 function Create() {
-  const [imageUrl, setImageUrl] = useState("");
-  const [title, setTitle] = useState("");
-  const [method, setMethod] = useState("");
-
-  const addCard = () => {
-    const newRecipe = {
-      img: imageUrl,
-      title: title,
-      method: method,
-    };
-
-    fetch("http://localhost:3000/recipies", {
-      method: "POST",
-      body: JSON.stringify(newRecipe),
-    })
-      .then(() => {
-        setImageUrl("");
-        setTitle("");
-        setMethod("");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
-
-  const isAddButtonDisabled = !imageUrl || !title || !method;
-
   return (
     <div>
-      <div className="card w-96 glass flex gap-10 p-9 ml-auto mr-auto mt-3">
-        <input
-          type="text"
-          placeholder="Image URL*"
-          className="input input-bordered w-full max-w-xs"
-          value={imageUrl}
-          onChange={(e) => setImageUrl(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Food title*"
-          className="input input-bordered w-full max-w-xs"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <textarea
-          className="textarea textarea-bordered"
-          placeholder="Method*"
-          value={method}
-          onChange={(e) => setMethod(e.target.value)}
-        ></textarea>
+      <h1 className="text-3xl text-center fond-bold mb-10">
+        Create new recipie
+      </h1>
+      <form className="flex items-center flex-col gap-5">
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Title</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Coocing time</span>
+          </div>
+          <input
+            type="number"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Image URL :</span>
+          </div>
+          <div className="flex gap-3">
+            <input
+              type="url"
+              placeholder="Type here"
+              className="input input-bordered w-full max-w-xs"
+            />
+            <button className="btn btn-secondary">ADD</button>
+          </div>
+        </label>
 
-        {isAddButtonDisabled ? (
-          <button
-            className="btn btn-disabled"
-            tabIndex="-1"
-            role="button"
-            aria-disabled="true"
-          >
-            ADD
-          </button>
-        ) : (
-          <Link to={"/"} className="btn btn-accent" onClick={addCard}>
-            ADD
-          </Link>
-        )}
-      </div>
-      <Link to={"/"} className="btn btn-accent mt-3">
-        Back Home
-      </Link>
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Method</span>
+          </div>
+          <textarea
+            className="textarea textarea-bordered h-24"
+            placeholder="Bio"
+          ></textarea>
+        </label>
+        <button className="btn btn-secondary  w-full max-w-xs">Submit</button>
+      </form>
     </div>
   );
 }
